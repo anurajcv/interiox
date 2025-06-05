@@ -1,0 +1,217 @@
+/* Basic Reset & Body Styles */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333; /* Keeping dark grey for general body text for readability on light background */
+    background-color: #EDE8DF; /* Light Beige from your palette */
+}
+
+/* Container for Centering Content */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    color: #3B4D44; /* Dark Green from your palette */
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3.5em;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+    color: #3B4D44; /* Dark Green from your palette */
+}
+
+/* Hero Section (Header) */
+.hero {
+    background-color: #EDE8DF; /* Light Beige from your palette */
+    color: #3B4D44; /* Dark Green for hero text if not explicitly styled */
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Styling for the logo within the hero section */
+.header-logo {
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+/* Taglines */
+.tagline {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #3B4D44; /* Dark Green from your palette */
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #B38E6A; /* Warm Brown/Tan from your palette */
+    color: #fff; /* White text for contrast */
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #9A795A; /* Slightly darker shade of Warm Brown/Tan for hover */
+}
+
+/* Section Padding */
+.section-padded {
+    padding: 60px 0;
+}
+
+/* Alternating Background Colors */
+.bg-light {
+    background-color: #EDE8DF; /* Using the Light Beige consistently as main background */
+    /* If you want a *different* alternating background, you'd need another color from your palette or a variation.
+       For now, making it consistent with the main background color for simplicity. */
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul li {
+    /* Custom bullet point with Warm Brown/Tan color */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="5" fill="%23B38E6A"/></svg>') no-repeat left center;
+    background-size: 8px 8px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Subheadings */
+.sub-heading {
+    font-style: italic;
+    color: #4C5F56; /* A slightly lighter dark green for sub-headings */
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: 1.1em;
+}
+
+/* Callout and Emphasis */
+.callout {
+    font-weight: bold;
+    color: #B38E6A; /* Warm Brown/Tan for callout */
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+
+.emphasis {
+    font-weight: bold;
+    color: #3B4D44; /* Dark Green for emphasis text */
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+
+/* Text alignment helpers */
+.text-center {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #3B4D44; /* Dark Green from your palette */
+    color: #fff; /* White text for contrast */
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Link styling */
+a {
+    color: #B38E6A; /* Warm Brown/Tan for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #9A795A; /* Slightly darker Warm Brown/Tan on hover */
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.7em;
+    }
+    .tagline {
+        font-size: 1.2em;
+    }
+    .hero {
+        padding: 60px 0;
+    }
+    .section-padded {
+        padding: 40px 0;
+    }
+    .header-logo {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.6em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    .tagline {
+        font-size: 1em;
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+    .header-logo {
+        max-width: 150px;
+    }
+}
