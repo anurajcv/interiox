@@ -253,3 +253,16 @@ h3 {
     animation: fadeInUp 0.8s ease-out forwards;
     animation-delay: 0.2s; /* A slight delay for headings to appear */
 }
+/* --- Photo Gallery Category Heading Styling --- */
+.gallery-category-heading {
+    font-family: 'Playfair Display', serif; /* Consistent with other headings */
+    font-size: 1.8em; /* Slightly smaller than h3 */
+    margin-top: 60px; /* Space above each category */
+    margin-bottom: 30px; /* Space below each category */
+    color: #444;
+    text-align: center;
+    /* Optional: Add a subtle animation if you like, similar to h3 */
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+    animation-delay: 0.3s; /* Delay for new headings */
+}
